@@ -19,13 +19,13 @@ const triviaData = {
             {
                 question: "What makes the Psyche asteroid unique compared to most other asteroids?",
                 answers: [
-                    "It's made mostly of metal (iron and nickel)",
+                    "It's a rare metal-rich world, a rock and metal mixture",
                     "It has a strong magnetic field",
                     "It has a breathable atmosphere",
                     "It has flowing water on its surface"
                 ],
                 correctIndex: 0,
-                explanation: "Unlike most rocky or icy asteroids, Psyche appears to be composed largely of metal - primarily iron and nickel. Scientists believe it might be the exposed core of an early planet."
+                explanation: "Scientists once thought Psyche was almost entirely metal. Radar and thermal data revised that: it is a mixture of rock and metal, with metal making up 30% to 60% of its volume. It is still the first metal-rich world we have visited, just not a solid lump of iron."
             },
             {
                 question: "What is the main goal of NASA's Psyche mission?",
@@ -99,7 +99,7 @@ const triviaData = {
                 answers: [
                     "Only cameras for imaging",
                     "A drill to collect samples",
-                    "Magnetometer, multispectral imager, and gamma ray spectrometer",
+                    "Magnetometer, multispectral imager, and gamma-ray/neutron spectrometer",
                     "Weather sensors and seismometers"
                 ],
                 correctIndex: 2,
@@ -123,13 +123,13 @@ const triviaData = {
             {
                 question: "How large is the Psyche asteroid?",
                 answers: [
-                    "About 10 miles (16 km) in diameter",
-                    "About 140 miles (226 km) in diameter",
-                    "About 500 miles (805 km) in diameter",
-                    "About 1,000 miles (1,610 km) in diameter"
+                    "About 10 miles (16 km) across",
+                    "About 173 miles (280 km) across at its widest point",
+                    "About 500 miles (805 km) across",
+                    "About 1,000 miles (1,610 km) across"
                 ],
                 correctIndex: 1,
-                explanation: "Psyche is about 140 miles (226 kilometers) in diameter, making it one of the largest objects in the main asteroid belt between Mars and Jupiter."
+                explanation: "Psyche is irregular and potato shaped, measuring 173 x 144 x 117 miles (279 x 232 x 189 km). Squashed into a perfect sphere it would be about 140 miles (226 km) across, but it is not spherical."
             },
             {
                 question: "Where is the Psyche asteroid located?",
@@ -149,13 +149,13 @@ const triviaData = {
             {
                 question: "When is the Psyche spacecraft expected to reach the asteroid?",
                 answers: [
-                    "2025",
-                    "2026",
-                    "2029",
-                    "2030"
+                    "August 2025",
+                    "August 2026",
+                    "August 2029",
+                    "August 2031"
                 ],
                 correctIndex: 2,
-                explanation: "After its launch in October 2023, the Psyche spacecraft is expected to arrive at the asteroid in 2029, after a journey of nearly 6 years."
+                explanation: "Psyche is captured by the asteroid's gravity in late July 2029 and begins orbital science operations in August 2029, about six years after its October 2023 launch."
             },
             {
                 question: "What celestial body will the Psyche spacecraft fly by for a gravity assist?",
@@ -165,8 +165,10 @@ const triviaData = {
                     "Mars",
                     "Jupiter"
                 ],
-                correctIndex: 3,
-                explanation: "The Psyche spacecraft will use a Mars gravity assist in 2026 to help it reach the asteroid. The gravity of Mars will help slingshot the spacecraft toward its destination."
+                // Mars is index 2. This was 3 ("Jupiter"), which contradicted the
+                // explanation below and marked the correct answer wrong.
+                correctIndex: 2,
+                explanation: "Psyche flew past Mars on 15 May 2026, passing 2,864 miles (4,609 km) above the surface. The flyby added about 1,000 mph and tilted the spacecraft's orbital plane by roughly 1 degree, slingshotting it toward the asteroid belt."
             }
         ],
         
@@ -181,7 +183,7 @@ const triviaData = {
                     "University of California"
                 ],
                 correctIndex: 1,
-                explanation: "Arizona State University leads the Psyche mission, with principal investigator Lindy Elkins-Tanton. NASA's Jet Propulsion Laboratory is responsible for mission management, operations, and navigation."
+                explanation: "Arizona State University leads the Psyche mission. Principal investigator Lindy Elkins-Tanton is now at UC Berkeley, which hosts the mission site. NASA's Jet Propulsion Laboratory handles mission management, operations, and navigation."
             },
             {
                 question: "Which NASA center manages the Psyche mission?",
@@ -201,24 +203,24 @@ const triviaData = {
             {
                 question: "What technology demonstration is flying with the Psyche mission?",
                 answers: [
+                    "Deep Space Optical Communications (DSOC)",
                     "Deep Space Atomic Clock 2",
-                    "Inflatable heat shield",
-                    "Miniature nuclear reactor",
-                    "Quantum communication system"
+                    "An inflatable heat shield",
+                    "A nuclear thermal propulsion testbed"
                 ],
                 correctIndex: 0,
-                explanation: "The Deep Space Atomic Clock 2 is flying on Psyche as a technology demonstration. This ultra-precise clock could help spacecraft navigate autonomously in the future."
+                explanation: "Psyche carries DSOC, a laser communications experiment and the first test of high bandwidth optical comms beyond the Moon. Deep Space Atomic Clock 2 is a different payload, bound for Venus aboard VERITAS, and never flew on Psyche."
             },
             {
-                question: "What type of communication will the Psyche mission test?",
+                question: "How did Psyche's DSOC laser communications experiment turn out?",
                 answers: [
-                    "Radio frequency only",
-                    "Deep Space Optical Communications",
-                    "Quantum entanglement messaging",
-                    "Gravitational wave communication"
+                    "It failed shortly after launch",
+                    "It exceeded its goals and finished in September 2025",
+                    "It is still waiting to be switched on",
+                    "It was removed from the spacecraft before launch"
                 ],
                 correctIndex: 1,
-                explanation: "Psyche will test Deep Space Optical Communications, using lasers instead of traditional radio waves, potentially enabling more efficient data transmission for future missions."
+                explanation: "DSOC completed its 65th and final pass on 18 September 2025, returning 13.6 terabits in total. It streamed ultra high definition video from 19 million miles away in December 2023 and set a record by downlinking from 307 million miles in December 2024, at rates at least 10 times comparable radio systems."
             }
         ]
     ]
